@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<decorators defaultdir="/decorators">
+
+	<!-- 사용 안할 패턴 -->
+	<excludes>
+		<pattern>/</pattern>
+	</excludes> 
+
+	<decorator name="mainLayout" page="/WEB-INF/views/layout/mainLayout.jsp">
+		<pattern>/main</pattern> 
+	</decorator> 
+</decorators>
