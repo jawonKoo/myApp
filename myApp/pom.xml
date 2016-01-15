@@ -194,6 +194,17 @@
                     <mainClass>org.test.int1.Main</mainClass>
                 </configuration>
             </plugin>
+            <plugin>
+            	<groupId>org.apache.tomcat.maven</groupId>
+            	<artifactId>tomcat7-maven-plugin</artifactId>
+            	<version>2.1</version>
+            	<configuration>
+            		<path>/deploytest</path>
+            		<url>http://kyi910705.iptime.org/manager/text</url>
+            		<username>tomcat</username>
+            		<password>admin</password>
+            	</configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
