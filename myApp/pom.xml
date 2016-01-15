@@ -200,7 +200,7 @@
             	<version>2.1</version>
             	<configuration>
             		<path>/myapp</path>
-            		<url>http://kyi910705.iptime.org/manager/text</url>
+            		<url>http://kyi910705.iptime.org:8080/manager/text</url>
             		<username>tomcat</username>
             		<password>admin</password>
             	</configuration>
