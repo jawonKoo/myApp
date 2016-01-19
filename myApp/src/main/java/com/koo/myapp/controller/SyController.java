@@ -58,4 +58,24 @@ public class SyController {
 		
 	}
 	
+	@RequestMapping(value = "/saveMobile")
+	public String saveMobile(MemberBean memberBean) throws Exception {
+		
+		logger.info("memberBean.Phonenum :" + memberBean.getPhoneNum());
+		logger.info("memberBean.Nickname :" + memberBean.getNickname());
+		logger.info("memberBean.Password :" + memberBean.getPassword());
+		
+		int resultCnt = memberService.insertMember(memberBean);
+		
+		String result = "";
+		
+		if(resultCnt == 0){
+			result = "failure";
+		}else{
+			result = "success";
+		}
+		
+		return null;
+	}
+	
 }
